@@ -1,18 +1,0 @@
-
-v	java:S115*"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ö÷•Ä8Ğ·¤ÂÑ2
-\
-java:S1118":Add a private constructor to hide the implicit public one.(ÉÇ†üÿÿÿÿ8ºÏŸÂÑ2
-X
-java:S6437"6Revoke and change this password, as it is compromised.(‚ã½Ûùÿÿÿÿ8ºÏŸÂÑ2
-L	java:S1062"+Replace this use of System.out by a logger.(õö¿Şüÿÿÿÿ8ˆÖæ³Ö2
-G	java:S106@"+Replace this use of System.err by a logger.(œÇà¨8ÙÏŸÂÑ2
-G	java:S106S"+Replace this use of System.err by a logger.(œÇà¨8ØêßÄÑ2
-I
-java:S1602\",Remove useless curly braces around statement(–È¨Ê8‰©ÓÄÑ2
-y
-java:S1612\"\Replace this lambda with method reference 'AlertFactory::generateFailAlertForErroreInterno'.(–È¨Ê8©ÓÄÑ2
-G
-java:S1172a"*Remove this unused method parameter "url".(¾„øâ8»Å¸ŠÖ2
-v
-java:S6244…"SConsider using the Consumer Builder method instead of creating this nested builder.(±—ïêøÿÿÿÿ8¹¨ ÂÑ2
-ksecrets:S6290"FMake sure the access granted with this AWS access key ID is restricted(Õ®„Ìûÿÿÿÿ8™ĞŸÂÑ2

@@ -1,9 +1,0 @@
-
-y
-java:S1192("WDefine a constant instead of duplicating this literal "-fx-text-fill: white; " 3 times.(‘Ìæöøÿÿÿÿ8ž„õ÷Ø2
-w
-java:S1192)"ZDefine a constant instead of duplicating this literal "-fx-font-family: System; " 3 times.(¿ ìÔ8Ÿ„õ÷Ø2
-s	java:S117š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùüççúÿÿÿÿ8 „õ÷Ø2
-\
-java:S1118":Add a private constructor to hide the implicit public one.(øï‰Ûýÿÿÿÿ8Î„õ÷Ø2
-M	java:S106‰"+Replace this use of System.err by a logger.(ºÇñ°üÿÿÿÿ8Ý„õ÷Ø2

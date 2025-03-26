@@ -1,7 +1,0 @@
-package it.unina.webtech.model;
-
-public class Main {
-    public static void main(String[] args) {
-        /*Main method*/
-    }
-}

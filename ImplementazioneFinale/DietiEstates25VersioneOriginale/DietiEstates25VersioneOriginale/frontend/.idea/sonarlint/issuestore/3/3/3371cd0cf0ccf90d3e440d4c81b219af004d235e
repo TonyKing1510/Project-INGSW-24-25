@@ -1,6 +1,0 @@
-
-w	java:S116
-"VRename this field "id_immobile" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø’§éøÿÿÿÿ8ˆúÂÑÏ2
-p	java:S100†"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃßõÎüÿÿÿÿ8¬·âŠÔ2
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¼·âŠÔ2

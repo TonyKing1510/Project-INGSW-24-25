@@ -1,14 +1,0 @@
-
-Y
-java:S6353N"<Use concise character class syntax '\\d' instead of '[0-9]'.(’›È8…Ìì­Ö2
-O
-java:S2201P"-The return value of "substring" must be used.(°ÿĞ¨ÿÿÿÿÿ8†Ìì­Ö2
-Y
-java:S6353W"<Use concise character class syntax '\\d' instead of '[0-9]'.(’›È8‡Ìì­Ö2
-I
-java:S1602i",Remove useless curly braces around statement(÷…ß¨8Ìì­Ö2
-M	java:S106"+Replace this use of System.out by a logger.(¥®ÿšùÿÿÿÿ8—Ìì­Ö2
-|
-java:S1128"ZRemove this unused import 'com.example.prova2.controller.CreaAgenteImmobiliareController'.(Ÿ†å·ıÿÿÿÿ8Ïû­Ö2
-W
-java:S1128"5Remove this unused import 'javafx.event.ActionEvent'.(î•¯¼ıÿÿÿÿ8Ïû­Ö2

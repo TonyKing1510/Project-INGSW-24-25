@@ -1,8 +1,0 @@
-
-j	java:S101s"NRename this record name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(…Ω…à8Í‡‰ıÿ2
-^	java:S107©"<Method has 8 parameters, which is greater than 7 authorized.(‡¥ñ¬˙ˇˇˇˇ8∫∞Âıÿ2
-L	java:S106""+Replace this use of System.out by a logger.(òäø€¸ˇˇˇˇ8⁄‚‰ıÿ2
-H	java:S106Í"+Replace this use of System.out by a logger.(ç‰Í£8¯‚‰ıÿ2
-M	java:S106Î"+Replace this use of System.out by a logger.(ÇÉ≠ê˚ˇˇˇˇ8í±Âıÿ2
-G	java:S106˙"+Replace this use of System.out by a logger.(©«ßl8ú±Âıÿ2
-M	java:S106˛"+Replace this use of System.err by a logger.(˙Îô˚ˇˇˇˇ8ú±Âıÿ2

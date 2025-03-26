@@ -1,5 +1,0 @@
-
-P	java:S1072"<Method has 8 parameters, which is greater than 7 authorized.(ßØ—<
-t
-java:S2142Q"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾
-E	java:S106O"+Replace this use of System.out by a logger.(ËÑ€¹ıÿÿÿÿ
