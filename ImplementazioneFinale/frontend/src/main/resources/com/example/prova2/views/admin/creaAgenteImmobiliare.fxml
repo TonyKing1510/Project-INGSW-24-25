@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prova2.controller.CreaAgenteImmobiliareController">
+   <content>
+      <Pane prefHeight="841.0" prefWidth="1523.0" styleClass="gradient-backgrounds" stylesheets="@../../css/style.css">
+         <children>
+            <Pane layoutY="-11.0" prefHeight="773.0" prefWidth="1442.0">
+               <children>
+                  <Pane layoutX="567.0" layoutY="167.0" prefHeight="581.0" prefWidth="899.0" style="-fx-background-radius: 20;" styleClass="container2" stylesheets="@../../css/style.css">
+                     <children>
+                        <Label layoutX="21.0" layoutY="8.0" prefHeight="32.0" prefWidth="452.0" text="Crea i tuoi agenti immobiliari!" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldNome" layoutX="34.0" layoutY="125.0" onKeyTyped="#levaMessaggioDiErroreNome" prefHeight="34.0" prefWidth="299.0" promptText="Es.Giuliano" styleClass="textField">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="34.0" layoutY="98.0" prefHeight="33.0" prefWidth="75.0" text="Nome" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldCognome" layoutX="34.0" layoutY="217.0" onKeyTyped="#levaMessaggioDiErroreCognome" prefHeight="34.0" prefWidth="299.0" promptText="Es.Savino" styleClass="textField">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="34.0" layoutY="190.0" prefHeight="33.0" prefWidth="75.0" text="Cognome" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="59.0" prefHeight="33.0" prefWidth="434.0" text="1.Inserisci i dati anagrafici dell'agente" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldNumeroTelefono" layoutX="109.0" layoutY="401.0" onKeyTyped="#levaMessaggioDiErroreTelefono" prefHeight="34.0" prefWidth="225.0" promptText="Es.3664398508" styleClass="textField">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField disable="true" layoutX="34.0" layoutY="401.0" prefHeight="34.0" prefWidth="58.0" text="+39">
+                           <font>
+                              <Font size="13.0" />
+                           </font></TextField>
+                        <Label layoutX="34.0" layoutY="375.0" prefHeight="33.0" prefWidth="75.0" text="Prefisso" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="444.0" layoutY="61.0" prefHeight="33.0" prefWidth="434.0" text="2.Inserisci i dati per il suo account" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldEmail" layoutX="457.0" layoutY="125.0" onKeyTyped="#levaMessaggioDiErroreEmail" prefHeight="34.0" prefWidth="299.0" promptText="Es.email@gmail.com" styleClass="textField">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textFieldRiPassword" layoutX="35.0" layoutY="580.0" prefHeight="33.0" prefWidth="299.0" promptText="Inserisci una password" styleClass="textField" visible="false">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="457.0" layoutY="99.0" prefHeight="33.0" prefWidth="75.0" text="Email" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="457.0" layoutY="196.0" prefHeight="33.0" prefWidth="300.0" text="Password (Almeno 8 caratteri)" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="109.0" layoutY="375.0" prefHeight="33.0" prefWidth="75.0" text="Telefono" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="40.0" onAction="#svuotaDati" layoutY="507.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="135.0" styleClass="indietroCrea" stylesheets="@../../css/style.css" text="Svuota campi">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <PasswordField fx:id="textFieldPassword" layoutX="457.0" layoutY="222.0" onKeyTyped="#levaMessaggioDiErrorePassword" prefHeight="34.0" prefWidth="299.0" promptText="Es.La mia password" styleClass="textField">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <Label fx:id="erroreNome" layoutX="35.0" layoutY="158.0" text="Si prega di inserire un nome" textFill="#F7F583" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="erroreCognome" layoutX="35.0" layoutY="250.0" text="Si prega di inserire un nome" textFill="#F7F583" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="erroreTelefono" layoutX="109.0" layoutY="434.0" text="Si prega di inserire un nome" textFill="#F7F583" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="erroreEmail" layoutX="457.0" layoutY="158.0" text="Si prega di inserire un nome" textFill="#F7F583" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="errorePassword" layoutX="458.0" layoutY="260.0" text="Si prega di inserire un nome" textFill="#F7F583" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldCf" layoutX="34.0" layoutY="312.0" onKeyTyped="#levaMessaggioDiErroreCF" prefHeight="34.0" prefWidth="299.0" promptText="Es.SVNGLN03T05H892R" styleClass="textField">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="34.0" layoutY="285.0" prefHeight="33.0" prefWidth="135.0" text="Codice fiscale" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="erroreCodiceFiscale" layoutX="35.0" layoutY="345.0" text="Si prega di inserire un nome" textFill="#F7F583" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="mostraPasswordCheckBox" layoutX="765.0" layoutY="230.0" mnemonicParsing="false" onAction="#gestisciMostraPass" prefHeight="17.0" prefWidth="149.0" style="-fx-cursor: hand;" text="Mostra password" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </CheckBox>
+                        <Button fx:id="buttonCrea" layoutX="721.0" layoutY="507.0" mnemonicParsing="false" onAction="#registraCliente" prefHeight="49.0" prefWidth="135.0" styleClass="crea" text="Crea" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="mostraPa" layoutX="457.0" layoutY="222.0" prefHeight="34.0" prefWidth="299.0" promptText="Es.La mia password" styleClass="textField" visible="false">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="24.0" layoutY="241.0" prefHeight="414.0" prefWidth="519.0" style="-fx-background-radius: 20;" styleClass="container">
+                     <children>
+                        <Label layoutX="70.0" prefHeight="84.0" prefWidth="401.0" text="Crea i tuoi agenti su DietiEstates25Pro!" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="33.0" layoutY="59.0" prefHeight="66.0" prefWidth="347.0" text="Una volta creati i tuoi agenti possono:" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="49.0" fitWidth="51.0" layoutX="30.0" layoutY="130.0">
+                           <image>
+                              <Image url="@../../images/icons8-done-64 (2).png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="81.0" layoutY="139.0" prefHeight="31.0" prefWidth="379.0" text="Accedere alla loro area riservata" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="49.0" fitWidth="51.0" layoutX="30.0" layoutY="215.0">
+                           <image>
+                              <Image url="@../../images/icons8-done-64 (2).png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="81.0" layoutY="222.0" prefHeight="35.0" prefWidth="318.0" text="Pubblicare annunci" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="49.0" fitWidth="51.0" layoutX="31.0" layoutY="303.0">
+                           <image>
+                              <Image url="@../../images/icons8-done-64 (2).png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="81.0" layoutY="312.0" prefHeight="31.0" prefWidth="480.0" text="Ricevere prenotazioni riguardo gli immobili caricati" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="77.0" layoutY="29.0" prefHeight="27.0" prefWidth="213.0" text="Crea agente" textFill="#f3f6f4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="tornaIndietroBottone" layoutX="-6.0" layoutY="4.0" mnemonicParsing="false" onAction="#tornaIndietro" prefHeight="85.0" prefWidth="88.0" style="-fx-background-color: transparent; -fx-cursor: hand">
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Immagine132.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children></Pane>
+            <ImageView fitHeight="99.0" fitWidth="136.0" layoutX="1368.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/Immagine3.png" />
+               </image>
+            </ImageView>
+            <Line endX="924.0" endY="3.814697265625E-6" layoutX="448.0" layoutY="33.0" startX="-236.80001831054688" startY="3.814697265625E-6" stroke="#f3f6f4" />
+            <TextFlow layoutX="1387.0" layoutY="697.0" prefHeight="107.0" prefWidth="136.0" />
+         </children>
+      </Pane>
+   </content>
+</ScrollPane>

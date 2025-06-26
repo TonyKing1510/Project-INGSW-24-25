@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="816.0" prefWidth="1382.0" styleClass="gradient-backgrounds4" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prova2.controller.login.LoginHomeController">
+   <Pane layoutX="203.0" layoutY="113.0" prefHeight="638.0" prefWidth="1149.0" style="-fx-background-radius: 20;" styleClass="container2">
+      <children>
+
+                     <!-- Etichetta per l'email -->
+         <Label layoutX="99.0" layoutY="166.0" prefHeight="30.0" prefWidth="79.0" text="Email" textFill="#f3f6f4">
+            <font>
+               <Font name="System Bold" size="21.0" />
+            </font>
+         </Label>
+         <Label layoutX="372.0" layoutY="14.0" prefHeight="67.0" prefWidth="499.0" text="Benvenuto su DietiEstates25!" textFill="#f3f6f4">
+            <font>
+               <Font name="Ebrima Bold" size="31.0" />
+            </font>
+         </Label>
+
+                                       <!-- Etichetta per la password -->
+         <Label layoutX="99.0" layoutY="279.0" prefHeight="13.0" prefWidth="116.0" text="Password" textFill="#f3f6f4">
+            <font>
+               <Font name="System Bold" size="21.0" />
+            </font>
+         </Label>
+      </children>
+   </Pane>
+
+   <Label fx:id="passwordErrorLabeln" layoutX="395.0" layoutY="440.0" text="Si prega di inserire una password!" textFill="#cf0303" visible="false">
+      <font>
+         <Font size="15.0" />
+      </font></Label>
+   <Pane layoutX="359.0" layoutY="158.0" prefHeight="548.0" prefWidth="573.0">
+      <children>
+
+                                       <!-- Pulsante Sign In -->
+         <Button fx:id="signInButton" layoutX="-54.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="52.0" prefWidth="324.0" style="-fx-font-size: 25; -fx-background-radius: 20; -fx-border-radius: 20; -fx-cursor: hand;" text="Accedi" textFill="#011638">
+            <font>
+               <Font size="28.0" />
+            </font>
+            <styleClass>
+               <String fx:value="bottoneTornaIndietro" />
+               <String fx:value="pane-custom" />
+            </styleClass>
+         </Button>
+
+                                       <!-- Testo per opzione di social login -->
+         <Label layoutX="51.0" layoutY="410.0" prefHeight="40.0" prefWidth="160.0" text="O accedi con" textFill="#f3f6f4">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+
+                                       <!-- Pulsante per login con Facebook -->
+         <Button layoutX="-14.0" layoutY="461.0" mnemonicParsing="false" onAction="#authGoogle" prefHeight="45.0" prefWidth="240.0" styleClass="social">
+            <graphic>
+               <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../../images/icons8-logo-di-google-48.png" />
+               </ImageView>
+            </graphic>
+         </Button>
+
+         <Label layoutX="570.0" layoutY="135.0" prefHeight="31.0" prefWidth="277.0" text="Sei un gestore?" textFill="#f3f6f4">
+            <font>
+               <Font name="Ebrima Bold" size="24.0" />
+            </font>
+         </Label>
+         <Line endX="0.39996337890625" endY="383.39996337890625" layoutX="463.0" layoutY="182.0" startX="0.39996337890625" startY="-120.60000610351562" stroke="WHITE" />
+
+                                       <!-- Etichetta Login -->
+         <Label layoutX="-56.0" layoutY="67.0" prefHeight="32.0" prefWidth="477.0" text="Accedi con il tuo account DietiEstates25" textFill="#f3f6f4">
+            <font>
+               <Font name="Ebrima Bold" size="25.0" />
+            </font>
+         </Label>
+         <Label layoutX="570.0" layoutY="327.0" prefHeight="31.0" prefWidth="339.0" text="Sei un agente immobiliare?" textFill="#f3f6f4">
+            <font>
+               <Font name="Ebrima Bold" size="24.0" />
+            </font>
+         </Label>
+         <Button fx:id="btnAmministratore" layoutX="570.0" layoutY="173.0" mnemonicParsing="false" onAction="#handleButtonAmministratore" prefHeight="60.0" prefWidth="363.0" style="-fx-font-size: 25; -fx-background-radius: 20; -fx-border-radius: 20; -fx-cursor: hand;" text="Accedi come gestore" textFill="#011638">
+            <font>
+               <Font size="36.0" />
+            </font>
+            <styleClass>
+               <String fx:value="bottoneTornaIndietro" />
+               <String fx:value="pane-custom" />
+            </styleClass>
+         </Button>
+
+                                       <!-- Campo per l'email -->
+         <TextField fx:id="emailField" layoutX="-56.0" layoutY="150.0" onKeyTyped="#levaMessaggioDiErroreEmail" prefHeight="40.0" prefWidth="324.0" promptText="Si prega di inserire una email" styleClass="textField">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </TextField>
+      
+               <!-- Etichetta per l'errore dell'email -->
+         <Label fx:id="emailErrorLabel" layoutX="-53.0" layoutY="187.0" prefHeight="31.0" prefWidth="324.0" text="Si prega di inserire una email!" textFill="#F7F583" visible="false">
+            <font>
+               <Font size="19.0" />
+            </font>
+         </Label>
+         <Label fx:id="passwordErrorLabel" layoutX="-53.0" layoutY="302.0" prefHeight="31.0" prefWidth="435.0" text="Si prega di inserire una password!" textFill="#F7F583" visible="false">
+            <font>
+               <Font size="19.0" />
+            </font>
+         </Label>
+
+                                       <!-- Campo per la password -->
+         <PasswordField fx:id="passwordField" layoutX="-56.0" layoutY="263.0" onKeyTyped="#levaMessaggioDiErrorePassword" prefHeight="40.0" prefWidth="324.0" promptText="Si prega di inserire una password" styleClass="textField">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </PasswordField>
+         <Label fx:id="registratiBotton" layoutX="-56.0" layoutY="529.0" onMouseClicked="#apriPaginaRegistrati" prefHeight="31.0" prefWidth="435.0" style="-fx-cursor: HAND;" stylesheets="@../../css/style.css" text="Non hai un account? Clicca qui per registrarti!" textFill="WHITE" underline="true">
+            <font>
+               <Font name="System Italic" size="21.0" />
+            </font>
+         </Label>
+
+                                 <!-- Pulsante per "Agente Immobiliare" -->
+         <Button fx:id="buttonAgenteImmobiliare" layoutX="570.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleButtonAgente" prefHeight="60.0" prefWidth="363.0" style="-fx-font-size: 25; -fx-background-radius: 20; -fx-border-radius: 20; -fx-cursor: hand;" text="Accedi come agente" textFill="#011638">
+            <font>
+               <Font size="36.0" />
+            </font>
+            <styleClass>
+               <String fx:value="bottoneTornaIndietro" />
+               <String fx:value="pane-custom" />
+            </styleClass>
+         </Button>
+         <TextField fx:id="mostraPa" layoutX="-56.0" layoutY="263.0" prefHeight="40.0" prefWidth="324.0" promptText="Si prega di inserire una password" styleClass="textField" visible="false">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </TextField>
+         <CheckBox fx:id="mostraPasswordCheckBox" layoutX="286.0" layoutY="274.0" mnemonicParsing="false" onAction="#gestisciMostraPass" prefHeight="17.0" prefWidth="149.0" style="-fx-cursor: hand;" text="Mostra password" textFill="WHITE">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </CheckBox>
+      </children>
+   </Pane>
+   <ImageView fitHeight="106.0" fitWidth="129.0" layoutX="-10.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../images/Immagine2454.png" />
+      </image>
+   </ImageView>
+   <Label layoutX="99.0" layoutY="25.0" prefHeight="39.0" prefWidth="298.0" text="DietiEstates25" textFill="#f3f6f4">
+      <font>
+         <Font name="Ebrima Bold" size="24.0" />
+      </font>
+   </Label>
+</Pane>

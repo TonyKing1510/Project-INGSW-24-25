@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="527.0" prefWidth="620.0"  xmlns="http://javafx.com/javafx/23.0.1" >
+    <children>
+        <VBox layoutX="20" layoutY="20" prefWidth="600" spacing="10">
+            <children>
+                <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Chi Siamo - DietiEstates25" textFill="#011638" />
+                
+                <ScrollPane fitToWidth="true" prefHeight="457.0" prefWidth="600.0">
+                    <content>
+                        <VBox spacing="10">
+                            <children>
+                                <Label style="-fx-font-weight: bold;" text="1. La nostra missione" textFill="#011638" />
+                                <Label text="DietiEstates25 è nata con l’obiettivo di rivoluzionare il settore immobiliare, rendendo la ricerca e la gestione degli immobili più semplice, veloce e intuitiva." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="2. Chi siamo?" textFill="#011638" />
+                                <Label text="Siamo un team di professionisti appassionati del mondo immobiliare e della tecnologia. Lavoriamo ogni giorno per offrire un servizio innovativo e affidabile ai nostri utenti." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="3. I nostri valori" textFill="#011638" />
+                                <Label text="Ci basiamo su trasparenza, affidabilità e innovazione. Crediamo che il mercato immobiliare debba essere accessibile a tutti, senza complicazioni." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="4. Cosa offriamo?" textFill="#011638" />
+                                <Label text="Offriamo una piattaforma intuitiva per la ricerca, la vendita e l'affitto di immobili. Grazie a strumenti avanzati come la ricerca su mappa e il contatto diretto con le agenzie, semplifichiamo il processo per gli utenti." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="5. Perché scegliere DietiEstates25?" textFill="#011638" />
+                                <Label text="Perché mettiamo gli utenti al centro della nostra piattaforma, offrendo un'esperienza personalizzata, senza costi nascosti e con il supporto di un team sempre disponibile." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="6. Come contattarci?" textFill="#011638" />
+                                <Label text="Puoi contattare i nostri esperti 'Anthony Arenella,Giuliano Savino o Giovanni Raucci'  tramite Micorsoft Teams , saranno a disposizione 24 ore su 24 , 7 giorni su 7" textFill="#011638" wrapText="true" />
+                            </children>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </children>
+        </VBox>
+      <ImageView fitHeight="80.0" fitWidth="129.0" layoutX="500.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/logo1.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

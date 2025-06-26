@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="487.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/23.0.1">
+    <children>
+        <VBox layoutX="20" layoutY="20" prefWidth="600" spacing="10">
+            <children>
+                <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Privacy Policy - DietiEstates25" textFill="#011638" />
+                
+                <ScrollPane fitToWidth="true" prefHeight="417.0" prefWidth="600.0">
+                    <content>
+                        <VBox spacing="10">
+                            <children>
+                                <Label style="-fx-font-weight: bold;" text="1. Quali dati raccogliamo?" textFill="#011638" />
+                                <Label text="Raccogliamo dati come nome, email, numero di telefono e dati di navigazione per migliorare l’esperienza dell’utente." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="2. Come utilizziamo i tuoi dati?" textFill="#011638" />
+                                <Label text="Utilizziamo i dati per fornirti servizi, migliorare la piattaforma e garantire la sicurezza degli utenti." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="3. I tuoi dati sono condivisi con terze parti?" textFill="#011638" />
+                                <Label text="I tuoi dati potrebbero essere condivisi con partner fidati per migliorare i nostri servizi, sempre nel rispetto della normativa vigente." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="4. Come posso richiedere la cancellazione dei miei dati?" textFill="#011638" />
+                                <Label text="Puoi richiedere la cancellazione dei tuoi dati inviando un messaggio tramite Micorsoft Teams a 'Giuliano Savino,Anthony Arenella oppure Giovanni Raucci'. Il nostro team si impegnerà a cancellarli tempestivamente." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="5. Quanto tempo conserviamo i tuoi dati?" textFill="#011638" />
+                                <Label text="Conserviamo i dati per il tempo necessario a fornire i nostri servizi, salvo obblighi legali diversi." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="6. Come proteggiamo i tuoi dati?" textFill="#011638" />
+                                <Label text="Adottiamo misure di sicurezza avanzate per proteggere i dati degli utenti da accessi non autorizzati." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="7. L'utente può modificare i propri dati?" textFill="#011638" />
+                                <Label text="Sì, puoi modificare i tuoi dati accedendo alle impostazioni del tuo account." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="8. Cosa succede in caso di violazione dei dati?" textFill="#011638" />
+                                <Label text="In caso di violazione, ti informeremo tempestivamente e prenderemo le misure necessarie per proteggere i tuoi dati." textFill="#011638" wrapText="true" />
+                            </children>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </children>
+        </VBox>
+      <ImageView fitHeight="85.0" fitWidth="134.0" layoutX="480.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/logo1.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

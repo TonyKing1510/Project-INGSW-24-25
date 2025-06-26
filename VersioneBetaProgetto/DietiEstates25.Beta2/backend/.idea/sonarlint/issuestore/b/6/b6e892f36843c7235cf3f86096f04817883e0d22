@@ -1,0 +1,8 @@
+
+L	java:S106"+Replace this use of System.out by a logger.(å¸•‡üÿÿÿÿ8þ¥’çÓ2
+k
+java:S1128"IRemove this unused import 'it.unina.webtech.dto.request.LoginRequestDTO'.(­ÎÎœûÿÿÿÿ8ºö‚çÓ2
+a
+java:S1128"DRemove this unused import 'it.unina.webtech.dto.response.AgenteDTO'.(„ßæ“8ºö‚çÓ2
+t
+java:S1128"WRemove this unused import 'it.unina.webtech.dto.response.GestoreAgenziaImmobiliareDTO'.(ºÊ·Œ8ºö‚çÓ2

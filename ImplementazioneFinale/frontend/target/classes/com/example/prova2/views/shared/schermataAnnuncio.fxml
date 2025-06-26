@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1133.0" prefWidth="1540.0" styleClass="gradient-backgrounds4" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prova2.controller.SchermataAnnuncioController">
+   <children>
+      <AnchorPane prefHeight="1136.0" prefWidth="1540.0" styleClass="container" stylesheets="@../../css/style.css">
+         <children>
+            <Pane layoutX="435.0" layoutY="628.0" prefHeight="200.0" prefWidth="200.0" />
+            <Pane prefHeight="47.0" prefWidth="15.0" />
+            <Pane layoutX="1214.0" layoutY="754.0" prefHeight="200.0" prefWidth="200.0" />
+            <ScrollPane fx:id="scrollAnnunci" hbarPolicy="NEVER" layoutX="5.0" layoutY="146.0" prefHeight="690.0" prefWidth="1010.0" stylesheets="@../../css/ScrollPane2.css" vbarPolicy="NEVER">
+              <content>
+                <AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="1806.0" prefWidth="991.0">
+                     <children>
+                        <Pane fx:id="PaneAnnunci" layoutX="14.0" layoutY="14.0" prefHeight="1822.0" prefWidth="974.0" style="-fx-background-radius: 10;" styleClass="container2">
+                           <children>
+                              <Pane fx:id="paneImageAnnuncio" layoutX="7.0" layoutY="6.0" prefHeight="457.0" prefWidth="956.0">
+                                 <children>
+                                    <Button fx:id="btnAvantiImage" layoutX="942.0" layoutY="203.0" mnemonicParsing="false" onAction="#handleAvanti" style="-fx-background-color: transparent; -fx-cursor: hand;">
+                                       <graphic>
+                                          <ImageView fx:id="btnIndietro1" fitHeight="35.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/icons8-forward-button-24.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="btnIndietroImage" layoutX="-30.0" layoutY="203.0" mnemonicParsing="false" onAction="#handleIndietro" style="-fx-background-color: transparent; -fx-cursor: hand;">
+                                       <graphic>
+                                          <ImageView fx:id="btnIndietro" fitHeight="35.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/icons8-go-back-24 (1).png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ScrollPane fx:id="scrollImageAnnuncio" hbarPolicy="NEVER" layoutX="10.0" layoutY="10.0" prefHeight="439.0" prefWidth="939.0" vbarPolicy="NEVER" />
+                                 </children>
+                              </Pane>
+                              <WebView fx:id="webViewMap" layoutX="31.0" layoutY="1319.0" prefHeight="427.0" prefWidth="850.0" />
+                              <Line endX="407.60003662109375" endY="-3.0517578125E-5" layoutX="534.0" layoutY="467.0" startX="-511.6000061035156" startY="-3.0517578125E-5" stroke="WHITE" />
+                              <Pane fx:id="paneInfoAnnuncio" layoutX="7.0" layoutY="487.0" prefHeight="742.0" prefWidth="956.0">
+                                 <children>
+                                    <Label fx:id="labelTipoImmobile" alignment="CENTER" layoutX="58.0" layoutY="12.0" prefHeight="35.0" prefWidth="162.0" text="Appartamento" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelIndirizzo" layoutX="252.0" layoutY="9.0" prefHeight="42.0" prefWidth="487.0" text="Indirizzo" textFill="#f3f6f4">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="38.0" fitWidth="42.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images/icons8-informazioni-50.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane fx:id="paneInfoPrezzo" layoutX="745.0" layoutY="11.0" prefHeight="43.0" prefWidth="200.0" styleClass="PaneAnnunciInfo">
+                                       <children>
+                                          <Label fx:id="labelPrezzo" alignment="CENTER" layoutX="12.0" layoutY="6.0" prefHeight="32.0" prefWidth="178.0" text="Prezzo" textAlignment="CENTER" textFill="#f3f6f4">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="paneInfoDescrizione" layoutX="14.0" layoutY="132.0" prefHeight="260.0" prefWidth="904.0" styleClass="PaneAnnunciInfo">
+                                       <children>
+                                          <Label layoutX="11.0" layoutY="11.0" prefHeight="30.0" prefWidth="129.0" text="Descrizione" textFill="#f3f6f4">
+                                             <font>
+                                                <Font name="System Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="labelInfoDescrizione" alignment="TOP_LEFT" layoutX="14.0" layoutY="44.0" prefHeight="208.0" prefWidth="839.0" text="Label" textFill="#f3f6f4" wrapText="true">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="paneInfoForniture" layoutX="15.0" layoutY="428.0" prefHeight="324.0" prefWidth="905.0" styleClass="PaneAnnunciInfo">
+                                       <children>
+                                          <Label layoutX="16.0" layoutY="9.0" prefHeight="30.0" prefWidth="212.0" text="Forniture ed altro" textFill="#f3f6f4">
+                                             <font>
+                                                <Font name="System Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="23.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/icons8-piantina-80.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="labelNumeroStanze" layoutX="79.0" layoutY="66.0" text="0" textFill="#f3f6f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="103.0" layoutY="65.0" text="Numero stanze" textFill="#f3f5f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="23.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/icons8-bagno-90.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="labelNumeroBagni" layoutX="79.0" layoutY="137.0" text="0" textFill="#f3f6f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="102.0" layoutY="137.0" text="Numero bagni" textFill="#f3f5f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="23.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/icons8-cucina-50.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="labelNumeroCucine" layoutX="79.0" layoutY="210.0" text="0" textFill="#f3f6f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="102.0" layoutY="211.0" text="Numero cucine" textFill="#f3f5f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="23.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/icons8-soggiorno-50.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="labelNumeroSoggiorni" layoutX="79.0" layoutY="280.0" text="0" textFill="#f3f6f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="102.0" layoutY="280.0" text="Numero soggiorni" textFill="#f3f5f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="316.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/icons8-scale-80.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="labelNumeroPiano" layoutX="381.0" layoutY="66.0" text="0" textFill="#f3f6f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="412.0" layoutY="66.0" text="Piano" textFill="#f3f5f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="316.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/icons8-superficie-80.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="labelSuperficie" layoutX="369.0" layoutY="137.0" prefHeight="25.0" prefWidth="78.0" text="0" textFill="#f3f6f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="427.0" layoutY="137.0" text="Superficie" textFill="#f3f5f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="316.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/icons8-buffet-50.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="labelArredamento" layoutX="381.0" layoutY="207.0" prefHeight="25.0" prefWidth="203.0" text="Tipo arredamento" textFill="#f3f6f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="318.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/icons8-efficienza-energetica-a-48.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="labelClasseEnergetica" layoutX="381.0" layoutY="280.0" text="0" textFill="#f3f6f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="422.0" layoutY="280.0" text="Classe energetica" textFill="#f3f5f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="583.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/icons8-dividere-i-soldi-50.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="labelSpeseCondominiali" layoutX="644.0" layoutY="66.0" prefHeight="25.0" prefWidth="42.0" text="0" textFill="#f3f6f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="701.0" layoutY="66.0" text="Spese condominiali" textFill="#f3f5f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="582.0" layoutY="127.0">
+                                             <image>
+                                                <Image url="@../../images/icons8-elevator-doors-100.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="labelDotato" layoutX="637.0" layoutY="141.0" prefHeight="25.0" prefWidth="200.0" text="Dotato di ascensore" textFill="#f3f5f4">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Label fx:id="labelInfoTitolo" layoutX="15.0" layoutY="83.0" prefHeight="39.0" prefWidth="735.0" text="Titolo immobile" textFill="#f3f6f4">
+                                       <font>
+                                          <Font name="System Bold" size="27.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Line endX="407.60003662109375" endY="-3.0517578125E-5" layoutX="534.0" layoutY="1265.0" startX="-511.6000061035156" startY="-3.0517578125E-5" stroke="WHITE" />
+                              <Label layoutX="29.0" layoutY="1276.0" text="Mappa" textFill="#f3f6f4">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+            <AnchorPane layoutX="1039.0" layoutY="125.0" prefHeight="576.0" prefWidth="474.0">
+               <children>
+                  <Pane layoutX="8.0" layoutY="36.0" prefHeight="375.0" prefWidth="458.0" styleClass="paneAnnunciInfoAgente">
+                     <children>
+                        <Label layoutX="14.0" layoutY="7.0" prefHeight="32.0" prefWidth="365.0" text="Prenota la tua visita all'immobile" textFill="#f3f4f6">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnPrenotaVisita" disable="true" layoutX="16.0" layoutY="49.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="426.0" styleClass="btnPrenotaVisita" text="Prenota la tua visita" textAlignment="CENTER" textFill="#15461e">
+                           <graphic>
+                              <ImageView fitHeight="36.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/icons8-calendario-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Line endX="135.199951171875" endY="-3.0517578125E-5" layoutX="229.0" layoutY="119.0" startX="-124.800048828125" startY="-3.0517578125E-5" stroke="WHITE" />
+                        <Pane fx:id="paneInfoAgente" layoutX="15.0" layoutY="133.0" prefHeight="228.0" prefWidth="426.0" styleClass="PaneAnnunciInfo">
+                           <children>
+                              <ImageView fx:id="imageAgente" fitHeight="95.0" fitWidth="76.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <clip>
+                                    <Circle centerX="36" centerY="36" radius="36" />
+                                 </clip>
+                                 <image>
+                                    <Image url="@../../images/icons8-account-48.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="labelNomeAgente" layoutX="92.0" layoutY="7.0" prefHeight="31.0" prefWidth="218.0" text="Nome Agente" textFill="#f3f6f4">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnLasciaRecensione" disable="true" layoutX="90.0" layoutY="43.0" mnemonicParsing="false" onAction="#apriLasciRecensione" prefHeight="38.0" prefWidth="282.0" styleClass="btnLasciaRecensione" text="Lascia la tua recensione" />
+                              <Pane fx:id="paneLasciaValutazione" layoutX="13.0" layoutY="103.0" prefHeight="120.0" prefWidth="400.0">
+                                 <children>
+                                    <Label layoutX="13.0" prefHeight="31.0" prefWidth="218.0" text="Valutazione agente" textFill="#f3f6f4">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnIndietro2" layoutX="6.0" layoutY="113.0" mnemonicParsing="false" onAction="#tornaAgliAnnunci" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Torna agli annunci" textFill="#f3f6f4" visible="false">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Immagine132.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Pane fx:id="paneAnnullaVisita" layoutX="632.0" layoutY="117.0" prefHeight="43.0" prefWidth="290.0" style="-fx-background-color: #34D058; -fx-background-radius: 20;" visible="false">
+               <children>
+                  <Label layoutX="14.0" layoutY="6.0" prefHeight="32.0" prefWidth="146.0" text="Visita prenotata!">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="annullaTasto" layoutX="193.0" layoutY="6.0" onMouseClicked="#annulla" prefHeight="32.0" prefWidth="88.0" style="-fx-cursor: hand;" text="Annulla" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label fx:id="scrittaCaricamento" layoutX="24.0" layoutY="115.0" prefHeight="39.0" prefWidth="802.0" text="Un momento stiamo recuperando i dati dell'immobile..." textFill="#f3f6f4">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Pane fx:id="paneSuccessoRecensione" layoutX="583.0" layoutY="114.0" prefHeight="47.0" prefWidth="383.0" style="-fx-background-color: #34D058; -fx-background-radius: 20;" visible="false">
+               <children>
+                  <Label layoutX="14.0" layoutY="8.0" prefHeight="32.0" prefWidth="365.0" text="La recensione è stata inviata con successo!">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="29.0" layoutY="28.0" prefHeight="82.0" prefWidth="1491.0" style="-fx-border-width: 5px; -fx-border-radius: 80; -fx-border-color: #011638; -fx-background-color: #011638; -fx-background-radius: 80;">
+         <children>
+            <Pane layoutX="-9.0" layoutY="-8.0" prefHeight="80.0" prefWidth="1496.0" style="-fx-background-color: #f3f6f4; -fx-border-radius: 80; -fx-background-radius: 80; -fx-border-width: 5;">
+               <children>
+                  <Button layoutX="31.0" layoutY="-35.0" mnemonicParsing="false" prefHeight="146.0" prefWidth="241.0" style="-fx-background-color: transparent;" />
+                  <Pane layoutX="1429.0" layoutY="20.0" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: #eeeeee; -fx-border-color: #011638; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 1; -fx-cursor: hand;">
+                     <children>
+                        <Button fx:id="btnUserDash" layoutX="-5.0" layoutY="-4.0" mnemonicParsing="false" onAction="#apriDash" prefHeight="47.0" prefWidth="52.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fx:id="fotoProfilo" fitHeight="24.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/icons8-ospite-maschio-24.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="159.0" fitWidth="185.0" layoutX="2.0" layoutY="-32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/logo1.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="linkHome" layoutX="675.0" layoutY="19.0" onAction="#setLinkHome" style="-fx-text-fill: #011638; -fx-font-size: 23px; -fx-font-weight: bold;" text="DietiEstates25" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

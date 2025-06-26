@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="749.0" prefWidth="1152.0" styleClass="gradient-backgrounds" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prova2.controller.notifiche.VisualizzaNotificheAgenteController">
+   <children>
+      <Label layoutX="120.0" layoutY="27.0" text="Le tue notifiche" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Line endX="190.99993896484375" endY="7.62939453125E-6" layoutX="789.0" layoutY="51.0" startX="-431.4000244140625" startY="7.62939453125E-6" stroke="#f3f6f4" />
+      <ImageView fitHeight="123.0" fitWidth="167.0" layoutX="980.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Immagine3.png" />
+         </image>
+      </ImageView>
+      <VBox fx:id="notificheContainer" layoutX="120.0" layoutY="120.0" spacing="10.0" />
+      <Label fx:id="singoleCategorie" layoutX="45.0" layoutY="672.0" onMouseClicked="#apriPaginaAttivaNotifiche" style="-fx-cursor: hand;" text="Attiva/Disattiva Singole categorie di notifiche" textFill="WHITE" underline="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="tornaIndietro" layoutX="693.0" layoutY="675.0" onMouseClicked="#apriPaginaAttivaNotifiche" prefHeight="26.0" prefWidth="233.0" style="-fx-cursor: hand;" text="Vedi notifiche precedenti" textFill="WHITE" underline="true" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Pane fx:id="paneAnnullaVisita" layoutX="450.0" layoutY="70.0" prefHeight="43.0" prefWidth="255.0" style="-fx-background-color: white; -fx-background-radius: 20;" visible="false">
+         <children>
+            <Label fx:id="labelAnnullaVisita" layoutX="24.0" layoutY="9.0" prefHeight="25.0" prefWidth="104.0" text="Visita accettata">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="annullaInvio" layoutX="159.0" layoutY="10.0" style="-fx-cursor: hand;" text="Annulla" underline="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="immagineNoNotifica" layoutX="500.0" layoutY="289.0" visible="false">
+         <image>
+            <Image url="@../../images/sleep-mode (1).png" />
+         </image>
+      </ImageView>
+      <Label fx:id="scrittaNoNotifica" layoutX="233.0" layoutY="417.0" text="Sei aggiornato! Al momento non ci sono notifiche." textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="immagineCarica1" layoutX="379.0" layoutY="396.0" text="Perfavore dacci un momento" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="immagineCarica2" layoutX="357.0" layoutY="439.0" text="stiamo caricando le tue notifiche..." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="immagineCarica" fitHeight="128.0" fitWidth="164.0" layoutX="494.0" layoutY="268.0">
+         <image>
+            <Image url="@../../images/Immagine2454.png" />
+         </image>
+      </ImageView>
+      <Line endX="-8.599990844726562" layoutX="115.0" layoutY="51.0" startX="-100.0" stroke="#f3f6f4" />
+   </children>
+</Pane>

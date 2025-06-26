@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prova2.controller.modificaProfilo.ModificaProfiloClienteController">
+   <content>
+      <Pane prefHeight="839.0" prefWidth="1523.0" styleClass="gradient-backgrounds" stylesheets="@../../css/style.css">
+         <children>
+            <Pane layoutY="-11.0">
+               <children>
+                  <Pane layoutX="584.0" layoutY="174.0" prefHeight="577.0" prefWidth="851.0" style="-fx-background-radius: 20;" styleClass="container2" stylesheets="@../../css/style.css">
+                     <children>
+                        <Label layoutX="21.0" layoutY="8.0" prefHeight="32.0" prefWidth="452.0" text="Modifica i tuoi dati!" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldNome" layoutX="34.0" layoutY="125.0" onKeyTyped="#levaMessaggioDiErroreNome" prefHeight="34.0" prefWidth="299.0" styleClass="textField">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="34.0" layoutY="98.0" prefHeight="33.0" prefWidth="75.0" text="Nome" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldCognome" layoutX="34.0" layoutY="225.0" onKeyTyped="#levaMessaggioDiErroreCognome" prefHeight="34.0" prefWidth="299.0" styleClass="textField">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="34.0" layoutY="198.0" prefHeight="33.0" prefWidth="89.0" text="Cognome" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="59.0" prefHeight="33.0" prefWidth="434.0" text="1.I tuoi dati anagrafici" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+
+                        <Label layoutX="444.0" layoutY="61.0" prefHeight="33.0" prefWidth="434.0" text="2.I tuoi dati dell'account DietiEstates25" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldEmail" layoutX="457.0" layoutY="125.0" onKeyTyped="#levaMessaggioDiErroreEmail" prefHeight="34.0" prefWidth="299.0" styleClass="textField">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textFieldRiPassword" layoutX="35.0" layoutY="580.0" prefHeight="33.0" prefWidth="299.0" promptText="Inserisci una password" styleClass="textField" visible="false">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="457.0" layoutY="98.0" prefHeight="33.0" prefWidth="75.0" text="Email" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="457.0" layoutY="198.0" prefHeight="33.0" prefWidth="94.0" text="Password" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="aggiornaDati" layoutX="697.0" layoutY="499.0" mnemonicParsing="false" onAction="#salvaDati" prefHeight="46.0" prefWidth="118.0" styleClass="bottoniVerdi" text="Aggiorna" textFill="WHITE" visible="false">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnCancella" layoutX="34.0" layoutY="499.0" mnemonicParsing="false" onAction="#annullaModificheDati" prefHeight="46.0" prefWidth="124.0" styleClass="bottoneTornaIndietro" stylesheets="@../../css/style.css" text="Cancella" visible="false">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Button>
+                        <PasswordField fx:id="textFieldPassword" disable="true" layoutX="457.0" layoutY="225.0" prefHeight="34.0" prefWidth="299.0" styleClass="textField" text="La tua password">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <Label fx:id="erroreNome" layoutX="35.0" layoutY="158.0" text="Si prega di inserire un nome" textFill="#F7F583" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="erroreCognome" layoutX="35.0" layoutY="260.0" text="Si prega di inserire un nome" textFill="#F7F583" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="erroreTelefono" layoutX="126.0" layoutY="362.0" text="Si prega di inserire un nome" textFill="#F7F583" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="erroreEmail" layoutX="457.0" layoutY="158.0" text="Si prega di inserire un nome" textFill="#F7F583" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="errorePassword" layoutX="458.0" layoutY="260.0" text="Si prega di inserire un nome" textFill="#F7F583" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="erroreCodiceFiscale" layoutX="35.0" layoutY="345.0" text="Si prega di inserire un nome" textFill="#F7F583" visible="false">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="457.0" layoutY="300.0" prefHeight="33.0" prefWidth="174.0" text="Conferma password" textAlignment="CENTER" textFill="#f3f6f4" visible="false" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="textFieldPassword1" layoutX="458.0" layoutY="328.0" prefHeight="34.0" prefWidth="299.0" styleClass="textField" visible="false">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <Label layoutX="544.0" layoutY="198.0" onMouseClicked="#apriPaginaModificaPassword" prefHeight="33.0" prefWidth="152.0" style="-fx-cursor: hand;" text="Cambia password" textAlignment="CENTER" textFill="#f3f6f4" underline="true" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="52.0" layoutY="214.0" prefHeight="468.0" prefWidth="476.0" style="-fx-background-radius: 20;" styleClass="container">
+                     <children>
+                        <ImageView fx:id="fotoProfilo" fitHeight="167.0" fitWidth="164.0" layoutX="156.0" layoutY="50.0" onMouseClicked="#apriPaginaModificaFoto">
+                           <clip> <Circle centerX="75" centerY="75" radius="75" /></clip>
+                           <image>
+                              <Image url="@../../images/user (5).png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="nomeEcognome" layoutX="130.0" layoutY="215.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnCancellaBio" layoutX="26.0" layoutY="594.0" mnemonicParsing="false" onMouseClicked="#resetBio" prefHeight="46.0" prefWidth="124.0" styleClass="bottoneTornaIndietro" stylesheets="@../../css/style.css" text="Cancella" visible="false">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="aggiornaBio" layoutX="328.0" layoutY="594.0" mnemonicParsing="false" onAction="#aggiornaBiografia" prefHeight="46.0" prefWidth="118.0" styleClass="bottoneModificaProfilo" text="Aggiorna" textFill="WHITE" visible="false">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="erroreBio" layoutX="19.0" layoutY="546.0" prefHeight="27.0" prefWidth="458.0" text="Si prega di inserire una biografia valida!(Max 3000 caratteri)" textFill="#f7f583" visible="false">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="77.0" layoutY="29.0" prefHeight="27.0" prefWidth="213.0" text="Modifica profilo" textFill="#f3f6f4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="tornaIndietroBottone" layoutX="-6.0" layoutY="4.0" mnemonicParsing="false" onAction="#tornaIndietro" prefHeight="85.0" prefWidth="88.0" style="-fx-background-color: transparent; -fx-cursor: hand">
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Immagine132.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="127.0" fitWidth="149.0" layoutX="1361.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Immagine3.png" />
+                     </image>
+                  </ImageView>
+                  <Pane fx:id="paneConfermaModifica" layoutX="670.0" layoutY="114.0" prefHeight="43.0" prefWidth="302.0" style="-fx-background-color: #34D058; -fx-background-radius: 20;" visible="false">
+                     <children>
+                        <Label layoutX="65.0" layoutY="6.0" prefHeight="32.0" prefWidth="223.0" text="Modifiche effettuate!">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children></Pane>
+            <Line endX="899.9998779296875" layoutX="448.0" layoutY="33.0" startX="-204.00001525878906" startY="3.814697265625E-6" stroke="#f3f6f4" />
+            <Pane fx:id="paneAnnullaCambio" layoutX="685.0" layoutY="100.0" prefHeight="42.0" prefWidth="525.0" style="-fx-background-color: #224A11; -fx-background-radius: 20;" visible="false">
+               <children>
+                  <Label layoutX="14.0" layoutY="3.0" prefHeight="35.0" prefWidth="311.0" text="Password cambiata con successo!" textFill="#f3f6f4">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="304.0" layoutY="7.0" onMouseClicked="#tornaIndietroPassword" prefHeight="27.0" prefWidth="201.0" style="-fx-cursor: hand;" text="Annulla cambiamento" textFill="#f3f6f4" underline="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </content>
+</ScrollPane>

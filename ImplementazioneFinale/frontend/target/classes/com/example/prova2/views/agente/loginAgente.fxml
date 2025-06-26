@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="844.0" prefWidth="1540.0" styleClass="gradient-backgrounds4" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prova2.controller.login.LoginAgenteController">
+   <children>
+      <Pane layoutX="782.0" layoutY="173.0" prefHeight="498.0" prefWidth="587.0" style="-fx-background-radius: 20;" styleClass="container2">
+         <children>
+            <Label layoutX="29.0" layoutY="33.0" text="Entra come un agente immobiliare!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="102.0" prefHeight="26.0" prefWidth="551.0" text="Per favore, inserisci le credenziali che ti sono state" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldEmail" layoutX="39.0" layoutY="210.0" onKeyTyped="#disattivaMessaggioErroreUsername" prefHeight="39.0" prefWidth="335.0" promptText="Si prega di inserire una email" styleClass="textField" stylesheets="@../../css/style.css">
+               <font>
+                  <Font size="17.0" />
+               </font></TextField>
+            <Label layoutX="40.0" layoutY="184.0" text="Email" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="293.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginButton" layoutX="419.0" layoutY="428.0" mnemonicParsing="false" onAction="#handelogin" prefHeight="45.0" prefWidth="127.0" styleClass="bottoneLoginAdmin" stylesheets="@../../css/style.css" text="Entra" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="tornaAllaHome" layoutX="39.0" layoutY="428.0" mnemonicParsing="false" onAction="#svuotaLogin" prefHeight="45.0" prefWidth="127.0" style="-fx-cursor: hand;" styleClass="bottoneTornaIndietro" text="Svuota campi">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <PasswordField fx:id="textFieldPassword" layoutX="39.0" layoutY="319.0" onKeyTyped="#disattivaMessaggioErrorePassword" prefHeight="39.0" prefWidth="335.0" promptText="Si prega di inserire una password" styleClass="textField">
+               <font>
+                  <Font size="17.0" />
+               </font></PasswordField>
+            <Label layoutX="40.0" layoutY="128.0" text="fornite dagli amministratori" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="mostraPa" layoutX="39.0" layoutY="319.0" onKeyTyped="#disattivaMessaggioErrorePassword" prefHeight="39.0" prefWidth="335.0" promptText="Si prega di inserire una password" styleClass="textField" visible="false">
+               <font>
+                  <Font size="17.0" />
+               </font></TextField>
+            <CheckBox fx:id="mostraPasswordCheckBox" layoutX="384.0" layoutY="326.0" mnemonicParsing="false" onAction="#gestisciMostraPass" prefHeight="17.0" prefWidth="149.0" style="-fx-cursor: hand;" text="Mostra password" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="errorUsername" layoutX="40.0" layoutY="248.0" text="Si prega di compilare questo campo!" textFill="#F7F583" visible="false">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorPassword" layoutX="40.0" layoutY="357.0" text="Si prega di compilare questo campo!" textFill="#F7F583" visible="false">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="bottoneTornaAllaHome" layoutX="21.0" layoutY="27.0" mnemonicParsing="false" onAction="#tornaHome" prefHeight="37.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-cursor: hand;" textFill="#011638">
+         <graphic>
+            <ImageView fitHeight="69.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/Immagine132.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane layoutX="110.0" layoutY="161.0" prefHeight="522.0" prefWidth="568.0" style="-fx-background-radius: 20;" styleClass="container">
+         <children>
+            <Label layoutX="91.0" layoutY="4.0" prefHeight="71.0" prefWidth="486.0" text="Benvenuto su DietiEstates25!" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="95.0" prefHeight="71.0" prefWidth="486.0" text="Effettuando l'accesso come agente puoi:" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="41.0" layoutY="187.0">
+               <image>
+                  <Image url="@../../images/icons8-done-64 (2).png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="41.0" layoutY="296.0">
+               <image>
+                  <Image url="@../../images/icons8-done-64 (2).png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="41.0" layoutY="401.0">
+               <image>
+                  <Image url="@../../images/icons8-done-64 (2).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="107.0" layoutY="184.0" prefHeight="71.0" prefWidth="486.0" text="Accedere alla tua area riservata" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="107.0" layoutY="293.0" prefHeight="71.0" prefWidth="486.0" text="Incominciare a caricare immobili" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="107.0" layoutY="398.0" prefHeight="71.0" prefWidth="486.0" text="Ricevere valutazioni da tutto il mondo" textAlignment="CENTER" textFill="#f3f6f4" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="84.0" fitWidth="100.0" layoutX="-4.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/Immagine3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="95.0" fitWidth="128.0" layoutX="1400.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Immagine3.png" />
+         </image>
+      </ImageView>
+      <Line endX="826.0" endY="7.62939453125E-6" layoutX="550.0" layoutY="66.0" startX="-174.0" startY="7.62939453125E-6" stroke="#f3f6f4" />
+      <Label layoutX="153.0" layoutY="46.0" prefHeight="37.0" prefWidth="274.0" text="DietiEstates25" textFill="#f3f6f4">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

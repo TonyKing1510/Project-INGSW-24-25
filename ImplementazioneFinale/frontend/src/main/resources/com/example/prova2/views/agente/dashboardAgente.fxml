@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<ScrollPane focusTraversable="false" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1399.0" prefWidth="1530.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prova2.controller.dashBoard.DashboardAgenteController">
+   <content>
+      <Pane prefHeight="1398.0" prefWidth="1528.0" styleClass="gradient-backgrounds4" stylesheets="@../../css/style.css">
+         <children>
+            <Pane layoutY="-1.0" styleClass="gradient-backgrounds3" stylesheets="@../../css/style.css" />
+            <Label layoutX="493.0" layoutY="109.0" prefHeight="35.0" prefWidth="202.0" text="Il mio profilo" textFill="#f3f6f4">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="490.0" layoutY="156.0" prefHeight="674.0" prefWidth="706.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" styleClass="container2" stylesheets="@../../css/style.css">
+               <children>
+                  <Label layoutX="28.0" layoutY="260.0" text="Nome" textFill="#f3f6f4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="353.0" layoutY="260.0" text="Email" textFill="#f3f6f4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelNomeProf" alignment="CENTER" layoutX="30.0" layoutY="288.0" prefHeight="29.0" prefWidth="183.0" style="-fx-background-radius: 10;" styleClass="container" text="Recupero nome..." textFill="#f3f6f4">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="342.0" text="Cognome" textFill="#f3f6f4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelCognomeProf" alignment="CENTER" layoutX="30.0" layoutY="369.0" prefHeight="30.0" prefWidth="183.0" style="-fx-background-radius: 10;" styleClass="container" text="Recupero cognome..." textFill="#f3f6f4">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="430.0" text="Telefono" textFill="#f3f6f4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelTel" alignment="CENTER" layoutX="30.0" layoutY="457.0" prefHeight="29.0" prefWidth="183.0" style="-fx-background-radius: 10;" styleClass="container" text="Recupero telefono..." textFill="#f3f6f4">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelMail" alignment="CENTER" layoutX="353.0" layoutY="288.0" prefHeight="29.0" prefWidth="183.0" style="-fx-background-radius: 10;" styleClass="container" text="Recupero email..." textFill="#f3f6f4">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="14.0" text="La tua biografia" textFill="#f3f6f4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelBioProf" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="13.0" layoutY="46.0" prefHeight="132.0" prefWidth="602.0" style="-fx-background-radius: 5;" styleClass="container" text="Recupero biografia..." textFill="#f3f6f4" wrapText="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="214.0" prefHeight="35.0" prefWidth="202.0" text="I tuoi dati anagrafici" textFill="#f3f6f4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="333.0" layoutY="214.0" prefHeight="35.0" prefWidth="238.0" text="I tuoi dati dell'account" textFill="#f3f6f4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="353.0" layoutY="342.0" text="Password" textFill="#f3f6f4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <PasswordField editable="false" layoutX="353.0" layoutY="369.0" prefHeight="30.0" prefWidth="182.0" style="-fx-background-radius: 10; -fx-focus-traversable: false;" styleClass="passwordAgenteInfo" text="Una grande password" />
+                  <Label fx:id="labelValutazione" layoutX="20.0" layoutY="526.0" prefHeight="35.0" prefWidth="202.0" text="La tua valutazione" textFill="#f3f6f4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Line endX="165.800048828125" layoutX="100.0" layoutY="507.0" startX="-100.0" stroke="WHITE" />
+                  <Line endX="165.800048828125" layoutX="99.0" layoutY="198.0" startX="-100.0" stroke="WHITE" />
+                  <Pane fx:id="paneLasciaValutazione" layoutX="22.0" layoutY="560.0" prefHeight="96.0" prefWidth="542.0" />
+               </children>
+            </AnchorPane>
+            <Pane layoutX="3.0" layoutY="113.0" prefHeight="507.0" prefWidth="286.0">
+               <children>
+                  <VBox layoutX="2.0" layoutY="-1.0" prefHeight="659.0" prefWidth="284.0" style="-fx-spacing: 10; -fx-background-radius: 10;" styleClass="container2" stylesheets="@../../css/style.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="95.0" prefWidth="284.0">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="labelNome" alignment="CENTER" layoutX="46.0" layoutY="25.0" prefHeight="27.0" prefWidth="176.0" textFill="#f3f6f4">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelCognome" alignment="CENTER" layoutX="46.0" layoutY="55.0" prefHeight="27.0" prefWidth="162.0" textFill="#f3f6f4">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fx:id="immagineProfiloAgente" fitHeight="75.0" fitWidth="74.0" layoutX="-18.0" layoutY="17.0">
+                                       <clip>
+                                          <Circle centerX="36" centerY="36" radius="36" />
+                                       </clip>
+                                       <image>
+                                          <Image url="@../../images/user (5).png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <Line endX="107.69288635253906" endY="79.20001220703125" startX="-174.60003662109375" startY="79.20001220703125" stroke="#f3f6f4" />
+                        <Pane onMouseClicked="#apriPaginaCreaAnnunci" prefHeight="83.0" prefWidth="336.0" styleClass="pane-custom">
+                           <children>
+                              <ImageView fitHeight="87.0" fitWidth="96.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+                              <Button fx:id="btnCreaAnnunci" alignment="CENTER" layoutX="17.0" layoutY="7.0" mnemonicParsing="false" onAction="#apriPaginaCreaAnnunci" prefHeight="69.0" prefWidth="268.0" style="-fx-background-color: transparent;" styleClass="pane-custom" text="Crea Annuncio" textFill="#f3f6f4" wrapText="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="38.0" layoutY="24.0">
+                                 <image>
+                                    <Image url="@../../images/icons8-casa-64 (1).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="78.0" prefWidth="284.0" styleClass="pane-custom">
+                           <children>
+                              <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="39.0" layoutY="20.0">
+                                 <image>
+                                    <Image url="@../../images/icons8-ricerca-50.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btnCercaImmobili" alignment="CENTER" layoutX="21.0" layoutY="5.0" mnemonicParsing="false" onAction="#apriPaginaCercaImmobili" prefHeight="69.0" prefWidth="268.0" style="-fx-background-color: transparent;" styleClass="pane-custom" text="Cerca immobili" textFill="#f3f6f4" wrapText="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="83.0" prefWidth="336.0" style="-fx-cursor: hand;" styleClass="pane-custom">
+                           <children>
+                              <ImageView fitHeight="87.0" fitWidth="96.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="39.0" layoutY="22.0">
+                                 <image>
+                                    <Image url="@../../images/icons8-calendar-50 (1).png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btnGestisciApp" alignment="CENTER" layoutX="46.0" layoutY="5.0" mnemonicParsing="false" onAction="#apriCalendario" onMouseClicked="#apriCalendario" prefHeight="69.0" prefWidth="265.0" style="-fx-background-color: transparent;" text="Visualizza appuntamenti" textFill="#f3f6f4" wrapText="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="83.0" prefWidth="336.0" styleClass="pane-custom">
+                           <children>
+                              <ImageView fitHeight="87.0" fitWidth="96.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+                              <Button fx:id="btnModificaIlProfilo" alignment="CENTER" layoutX="23.0" layoutY="7.0" mnemonicParsing="false" onAction="#apriPaginaModificaProfilo" prefHeight="69.0" prefWidth="268.0" style="-fx-background-color: transparent;" text="Modifica Profilo" textFill="#f3f6f4" wrapText="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="38.0" layoutY="24.0">
+                                 <image>
+                                    <Image url="@../../images/icons8-matita-50.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="83.0" prefWidth="336.0" styleClass="pane-custom">
+                           <children>
+                              <ImageView fitHeight="87.0" fitWidth="96.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+                              <Button fx:id="btnNotifiche" alignment="CENTER" layoutX="2.0" layoutY="7.0" mnemonicParsing="false" onAction="#apriPaginaVisualizzaNotifiche" prefHeight="69.0" prefWidth="268.0" style="-fx-background-color: transparent;" text="Notifiche" textFill="#f3f6f4" wrapText="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="38.0" layoutY="25.0">
+                                 <image>
+                                    <Image url="@../../images/icons8-campana-48.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="73.0" prefWidth="284.0" styleClass="pane-custom">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="38.0" layoutY="19.0" y="-5.0">
+                                 <image>
+                                    <Image url="@../../images/icons8-power-off-button-48.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="buttonLogout" alignment="CENTER" layoutX="-12.0" layoutY="-4.0" mnemonicParsing="false" onAction="#faiLogout" prefHeight="71.0" prefWidth="282.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Logout" textFill="#f3f6f4" wrapText="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </VBox>
+               </children>
+            </Pane>
+            <ImageView fitHeight="108.0" fitWidth="141.0" layoutX="1377.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/Immagine3.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="76.0" layoutY="19.0" prefHeight="27.0" prefWidth="213.0" text="La tua area riservata" textFill="#f3f6f4">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Line endX="927.9998779296875" endY="3.814697265625E-6" layoutX="448.0" layoutY="33.0" startX="-185.79998779296875" stroke="#f3f6f4" />
+            <TextFlow layoutX="1328.0" layoutY="508.0" prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane layoutX="490.0" layoutY="882.0" prefHeight="472.0" prefWidth="633.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-cursor: hand" styleClass="container2" stylesheets="@../../css/style.css">
+               <children>
+                  <Label layoutX="22.0" layoutY="18.0" text="Annunci recenti" textFill="#f3f6f4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelNomeProf11" alignment="CENTER" layoutX="15.0" layoutY="53.0" prefHeight="26.0" prefWidth="596.0" style="-fx-background-radius: 10;" styleClass="container" textFill="#f3f6f4">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="184.0" layoutY="57.0" text="Nome" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="487.0" layoutY="57.0" text="Città" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane fx:id="scrollAnnunci" layoutX="20.0" layoutY="89.0" prefHeight="378.0" prefWidth="591.0" stylesheets="@../../css/ScrollPane2.css">
+                     <content>
+                        <Pane prefHeight="378.0" prefWidth="571.0">
+                           <children>
+                              <Button fx:id="bottoneNoAnnunci" layoutX="202.0" layoutY="93.0" mnemonicParsing="false" onAction="#apriPaginaCreaAnnunci" prefHeight="116.0" prefWidth="151.0" style="-fx-background-color: transparent;">
+                                 <graphic>
+                                    <ImageView fitHeight="97.0" fitWidth="98.0">
+                                       <image>
+                                          <Image url="@../../images/icons8-plus-100.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label fx:id="scrittaNoAnnunci1" layoutX="162.0" layoutY="209.0" text="Comincia a creare annunci" textFill="#f3f6f4">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="scrittaNoAnnunci2" layoutX="154.0" layoutY="239.0" text="premendo il tasto &quot;+&quot; in alto." textFill="#f3f6f4">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children></Pane>
+                     </content></ScrollPane>
+                  <Line endX="-22.39996337890625" endY="14.20001220703125" layoutX="416.0" layoutY="59.0" startX="-22.39996337890625" startY="6.103515625E-5" stroke="#f3f6f4" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnIndietro" layoutX="3.0" layoutY="1.0" mnemonicParsing="false" onAction="#vaiAllaSchermataPrecedente" style="-fx-background-color: transparent; -fx-cursor: hand;">
+               <graphic>
+                  <ImageView fx:id="frecciaIndietro" fitHeight="61.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand">
+                     <image>
+                        <Image url="@../../images/Immagine132.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Pane fx:id="paneEliminaImmobile" layoutX="658.0" layoutY="48.0" prefHeight="48.0" prefWidth="434.0" style="-fx-background-color: #32CD56; -fx-background-radius: 20;" visible="false">
+               <children>
+                  <Label layoutX="16.0" layoutY="11.0" text="Eliminazione dell'immobile avvenuta con successo!">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </content>
+</ScrollPane>

@@ -1,0 +1,16 @@
+.radio-button .radio2 {
+    -fx-background-color: transparent;
+    -fx-border-color: #f3f6f4; /* Bordo quando non selezionato */
+    -fx-border-radius: 10; /* Rotondo */
+    -fx-border-width: 2;
+    -fx-padding: 5;
+    -fx-shape: "M 0 0 A 5 5 0 1 1 10 0 A 5 5 0 1 1 0 0"; /* Pallino circolare */
+}
+
+.radio-button:selected .radio2 {
+    -fx-background-color: #f3f6f4; /* Riempimento quando selezionato */
+    -fx-border-color: #f3f6f4; /* Bordo quando selezionato */
+    -fx-background-radius: 10; /* Rotondo */
+    -fx-border-radius: 10;
+    -fx-padding: 5;
+}

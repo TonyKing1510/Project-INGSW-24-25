@@ -1,0 +1,336 @@
+.gradient-backgrounds{
+    -fx-background-color : linear-gradient(from 100% 100% to 100% 100%, rgba(1, 22, 56, 0.8),#f3f6f4);
+    }
+
+    .gradient-backgrounds2{
+        -fx-background-color : linear-gradient(from 5% 5% to 100% 100%, rgba(1, 22, 56, 0.8),#f3f6f4);
+        }
+    
+        .gradient-backgrounds3{
+            -fx-background-color : linear-gradient(from 2% 2% to 100% 100%, rgba(1, 22, 56, 0.8),#f3f6f4);
+            }
+
+.gradient-backgrounds4 {
+    -fx-background-color: linear-gradient(from 50% 0% to 200% 100%, rgba(1, 22, 56, 0.8), #f3f6f4);
+}
+
+.container{
+    -fx-background-color : rgba(255, 255, 255, 0.1);
+    -fx-backgrounds-radius : 10;
+    border-radius: 10;
+}
+
+.container2{
+    -fx-background-color : rgba(1, 22, 56, 0.2);
+    -fx-backgrounds-radius : 10;
+    border-radius: 10;
+}
+
+.textField{
+    -fx-background-color : rgba(255, 255, 255, 0.2);
+    -fx-backgrounds-radius : 10;
+    border-radius: 10;
+    -fx-text-fill: #f3f6f4;
+    -fx-prompt-text-fill: #BBBBBB;
+}
+
+.textFieldAnnunci{
+    -fx-background-color : rgba(255, 255, 255, 0.2);
+    -fx-backgrounds-radius : 10;
+    border-radius: 10;
+    -fx-text-fill: #f3f6f4;
+    -fx-prompt-text-fill: #BBBBBB;
+    -fx-wrap-text: true;
+}
+
+.textPiano{
+    -fx-background-color : rgba(255, 255, 255, 0.2);
+    -fx-backgrounds-radius : 10;
+    border-radius: 10;
+}
+
+.textarea {
+    background-color: transparent; /* Rende lo sfondo trasparente */
+    color: #000; /* Colore del testo */
+    font-size: 14px; /* Dimensione del testo */
+    resize: none; /* Disabilita il ridimensionamento (opzionale) */
+    outline: none; /* Rimuove il bordo di focus */
+}
+
+.bottoneDimenticatoPassword{
+    -fx-cursor: hand;
+    -fx-text-fill: #011638;
+    -fx-underline: true;
+}
+
+.bottoneDimenticatoPassword:hover {
+    -fx-text-fill: #1800b4;
+}
+
+.bottoneLoginAdmin{
+    -fx-text-fill: #f3f6f4;
+    -fx-background-color: #011638; /* Blu scuro */
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+.bottoneModificaProfilo{
+    -fx-text-fill: #f3f6f4;
+    -fx-background-color:  #27AE60;
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+}
+
+.bottoniVerdi{
+    -fx-cursor: hand;
+    -fx-background-color:  #27AE60;
+    -fx-background-radius: 15;
+}
+
+.bottoniVerdi:hover{
+    -fx-background-color: #b0b0b0; /* Schiarisce un po' al passaggio */
+
+}
+
+.paneImmobili{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.paneImmobili:hover{
+    -fx-background-color: #b0b0b0; /* Schiarisce un po' al passaggio */
+}
+
+
+.bottoneModificaProfilo:hover{
+    -fx-background-color: #b0b0b0; /* Schiarisce un po' al passaggio */
+}
+
+.bottoneLoginAdmin:hover{
+    -fx-background-color: #b0b0b0; /* Schiarisce un po' al passaggio */
+}
+
+.bottoneTornaIndietro {
+    -fx-background-color: #f3f6f4; /* Grigio tenue */
+    -fx-text-fill: #011638; /* Testo blu scuro */
+    -fx-cursor: hand;
+    -fx-background-radius: 10;
+}
+
+.buttonAggiornaRicerca{
+    -fx-background-color: #f3f6f4; /* Grigio tenue */
+    -fx-text-fill: #011638; /* Testo blu scuro */
+    -fx-cursor: hand;
+    -fx-background-radius: 0 0 60 0;
+}
+
+.buttonAggiornaRicerca:hover{
+    -fx-background-color: #b0b0b0;
+}
+
+.bottoneTornaIndietro:hover {
+    -fx-background-color: #b0b0b0; /* Schiarisce un po' al passaggio */
+
+}
+
+.pane-custom:hover {
+    -fx-background-color: #b0b0b0; /* Schiarisce un po' al passaggio */
+}
+
+.AnchorPaneRicerca{
+    -fx-background-radius: 0 0 60 60;
+}
+
+.PaneRicerca{
+    -fx-background-color : rgba(255, 255, 255, 0.2);
+    -fx-border-color:white;
+    -fx-border-width: 1;
+    -fx-border-radius: 10 10 10 60;
+    -fx-background-radius: 10 10 10 60;
+}
+
+.labelRicerca{
+    -fx-background-color : rgba(255, 255, 255, 0.2);
+    -fx-border-color:white;
+    -fx-border-width: 1;
+    -fx-border-radius: 10 0 0 60;
+    -fx-background-radius: 10 0 0 60;
+}
+
+
+.PaneAnnunciInfo{
+    -fx-background-color : rgba(255, 255, 255, 0.2);
+    -fx-border-color:white;
+    -fx-border-width: 1;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+
+.textarea2 {
+    background: none;
+    border: none;
+    color: white; /* Cambia il colore del testo per adattarlo allo sfondo */
+    font-size: 12px;
+    padding: 8px;
+    outline: none; /* Rimuove il bordo di focus */
+    resize: none; /* Evita il ridimensionamento manuale */
+}
+
+/* Se vuoi che il bordo diventi più evidente quando il textarea è attivo */
+.textarea2:hover {
+    border-color: white;
+}
+
+
+.custom-popup {
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-color: white;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 8, 0, 2, 2);
+}
+
+.btnPrenotaVisita {
+    -fx-background-color: #34D058; /* Verde brillante */
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-text-fill: #000000;
+    -fx-border-color: #000000;
+    -fx-cursor: hand;
+    -fx-transition: background-color 0.3s ease;
+}
+
+.btnPrenotaVisita:hover {
+    -fx-background-color: #2CA44A; /* Verde più scuro */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 2);
+}
+
+.confermaIndirizzo {
+    -fx-background-color: rgba(0, 255, 98, 0.337); /* Verde trasparente */
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-text-fill: rgb(9, 67, 32);
+    -fx-border-color: rgb(9, 67, 32);
+    -fx-cursor: hand;
+    -fx-transition: background-color 0.3s ease;
+}
+
+.confermaIndirizzo:hover {
+    -fx-background-color: rgba(0, 200, 80, 0.6); /* Verde più scuro e meno trasparente */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 2);
+}
+
+
+.paneAnnunciInfoAgente{
+    -fx-background-color : rgba(1, 22, 56, 0.2);
+    -fx-background-radius : 10;
+    border-radius: 10;
+}
+
+.btnLasciaRecensione {
+    -fx-background-color: rgba(243, 246, 244, 0.7); /* Grigio tenue */
+    -fx-text-fill: #011638; /* Testo blu scuro */
+    -fx-cursor: hand;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #011638;
+    -fx-transition: background-color 0.3s ease; /* Transizione fluida */
+}
+
+.btnLasciaRecensione:hover {
+    -fx-background-color: rgba(200, 220, 210, 0.9); /* Grigio più scuro */
+}
+
+
+.passwordAgenteInfo{
+    -fx-background-color : rgba(255, 255, 255, 0.1);
+    -fx-backgrounds-radius : 10;
+    border-radius: 10;
+    -fx-text-fill: #f3f6f4;
+    -fx-prompt-text-fill: #BBBBBB;
+    -fx-user-select: none;
+}
+
+.combo-box {
+    -fx-border-color: #011638; /* Colore di sfondo della ComboBox */
+}
+
+
+.combo-box:editable {
+    -fx-background-color: #eeeeee; /* Colore di sfondo quando è editabile */
+}
+
+.cerca{
+    -fx-background-radius : 12;
+    -fx-background-color: #011638;
+    -fx-cursor: hand;
+}
+
+.cerca:hover{
+    -fx-background-color: #b0b0b0; /* Schiarisce un po' al passaggio */
+}
+
+.social{
+    -fx-background-color: #f3f6f4;
+    -fx-cursor: hand;
+    -fx-background-radius: 15;
+}
+
+.social:hover{
+    -fx-background-color: #b0b0b0; /* Schiarisce un po' al passaggio */
+}
+
+.crea{
+    -fx-cursor: hand;
+    -fx-background-color:  #27AE60;
+    -fx-background-radius: 20;
+}
+
+.crea:hover{
+    -fx-background-color: #b0b0b0; /* Schiarisce un po' al passaggio */
+}
+
+.indietroCrea{
+    -fx-background-color: #f3f6f4; /* Grigio tenue */
+    -fx-text-fill: #011638; /* Testo blu scuro */
+    -fx-cursor: hand;
+    -fx-background-radius: 20;
+}
+
+.indietroCrea:hover{
+    -fx-background-color: #b0b0b0; /* Schiarisce un po' al passaggio */
+}
+
+.btnAccettaInfo{
+    -fx-background-color:  #2ECC71;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+}
+
+.btnAccettaInfo:hover{
+    -fx-background-color: #b0b0b0; /* Schiarisce un po' al passaggio */
+}
+
+.btnRifiutoInfo{
+    -fx-background-color:   #FF4C4C;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+}
+
+.btnRifiutoInfo:hover{
+    -fx-background-color: #b0b0b0; /* Schiarisce un po' al passaggio */
+}
+
+.button-custom {
+    -fx-background-color: #FF8C00;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.button-custom:hover {
+    -fx-background-color: #E07B00;
+}
+
+

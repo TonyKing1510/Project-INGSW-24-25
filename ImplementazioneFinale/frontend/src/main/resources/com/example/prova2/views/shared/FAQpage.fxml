@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="614.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox layoutX="20" layoutY="20" prefWidth="600" spacing="10">
+            <children>
+                <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="FAQ - DietiEstates25" textFill="#011638" />
+                
+                <ScrollPane fitToWidth="true" prefHeight="549.0" prefWidth="600.0">
+                    <content>
+                        <VBox spacing="10">
+                            <children>
+                                <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="🔍 Uso dell’App" textFill="#011638" />
+                                <Label style="-fx-font-weight: bold;" text="1. Come posso cercare un immobile su DietiEstates25?" textFill="#011638" />
+                                <Label text="Puoi cercare un immobile utilizzando la barra di ricerca nella home. Filtra i risultati per città, prezzo, numero di stanze e altri criteri per trovare l’annuncio perfetto per te." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="2. Posso vedere le mie ricerche passate ?" textFill="#011638" />
+                                <Label text="Certo, troverai quelle piu' recenti nella sezione &quot;Ricerche passate&quot; nella home, basta cliccare nella barra in alto" textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="3. Posso prenotare una visita ad un immobile che ho cercato ?" textFill="#011638" />
+                                <Label text="Sì, ogni annuncio ha un pulsante 'Prenota visita' che ti permette di una richiesta di visita all'agente che si occupa di quell'immobile" textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="4. Posso visualizzare gli immobili su una mappa?" textFill="#011638" />
+                                <Label text="Si, quando andrai a ricercare il tuo immobile, sulla destra avrai la mappa che visualizzerà dove si trova l'immobile" textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="🏡 Inserzione e Pubblicazione Annunci" textFill="#011638" />
+                                <Label style="-fx-font-weight: bold;" text="5. Come posso pubblicare un annuncio su DietiEstates25?" textFill="#011638" />
+                                <Label text="Se sei un agente immobiliare, puoi pubblicare un annuncio registrandoti e selezionando 'Crea Annuncio' nel tuo profilo. Compila tutti i dettagli e carica le immagini." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="6. Quanto costa pubblicare un annuncio?" textFill="#011638" />
+                                <Label text="La pubblicazione degli annunci è totalmente gratuita basta che tu sia un agente" textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="7. Posso modificare un annuncio dopo la pubblicazione?" textFill="#011638" />
+                                <Label text="No, per ora questa funzione non è disponibile , ma puoi vedere i tuoi annunci nella sezione 'Annunci recenti' nella dashboard di agente" textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="⚙ Account e Impostazioni" textFill="#011638" />
+                                <Label style="-fx-font-weight: bold;" text="8. Devo registrarmi per usare l’app?" textFill="#011638" />
+                                <Label text="Si, devi registrarti per accedere a tutte le funzioni del nostro sito, clicca l'apposito link in basso a sinistra che ti porterà direttamente alla pagina di registrazione oppure accedi con Google" textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="9. Come posso recuperare la mia password?" textFill="#011638" />
+                                <Label text="Puoi recarti nella tua dashboard e premere ' Modifica profilo ', da li troverai il link per il cambio password" textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="🔧 Assistenza e Problemi Tecnici" textFill="#011638" />
+                                <Label style="-fx-font-weight: bold;" text="10. Cosa posso fare se un annuncio è falso o sospetto?" textFill="#011638" />
+                                <Label text="Puoi segnalarlo contattando tramite Microsoft Teams , il nostro esperto Giuliano Savino cercalo nella barra apposita dell'app. Il nostro team esaminerà la segnalazione." textFill="#011638" wrapText="true" />
+                                
+                                <Label style="-fx-font-weight: bold;" text="11. L’app non funziona correttamente, cosa posso fare?" textFill="#011638" />
+                                <Label text="Prova a riavviare l’app o a reinstallarla. Se il problema persiste, o trovi altri bug contatta il nostro esperto 'Anthony Arenella' , su Microsoft Teams cercandolo tramite la barra di ricerca dell'app apposita" textFill="#011638" wrapText="true" />
+                            </children>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </children>
+        </VBox>
+      <ImageView fitHeight="124.0" fitWidth="130.0" layoutX="483.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/logo1.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

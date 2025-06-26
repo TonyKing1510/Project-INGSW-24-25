@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="766.0" prefWidth="1106.0" styleClass="gradient-backgrounds" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prova2.controller.prenotaVisita.EffettuaPrenotazioneController">
+   <children>
+      <Label fx:id="scrittaNoNotifica" layoutX="32.0" layoutY="26.0" text="Effettua la tua prenotazione!" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="97.0" fitWidth="119.0" layoutX="975.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Immagine3.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="scrittaNoNotifica1" layoutX="97.0" layoutY="285.0" text="Seleziona il giorno in cui vuoi visitare l'immobile" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="90.0" layoutY="330.0" prefHeight="200.0" prefWidth="1585" style="-fx-border-color: transparent;" stylesheets="@../../css/ScrollPaneCss.css" vbarPolicy="NEVER">
+         <content>
+            <HBox fx:id="hboxContenitore" fillHeight="false" layoutY="300.0" prefWidth="4800.0" style="-fx-spacing: 150; -fx-border-color: transparent;">
+            </HBox>
+         </content>
+      </ScrollPane>
+            <Button layoutX="1348.0" layoutY="1.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="125.0" style="-fx-background-color: transparent; -fx-cursor: hand">
+               <graphic>
+                  <ImageView fitHeight="81.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/frecciaAvanti.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnIndietro" mnemonicParsing="false" prefHeight="89.0" prefWidth="125.0" style="-fx-background-color: transparent; -fx-cursor: hand;" visible="false">
+               <graphic>
+                  <ImageView fitHeight="81.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/frecciaIndietro.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+
+
+      <Label fx:id="scrittaNoNotifica12" layoutX="102.0" layoutY="555.0" text="Seleziona una fascia oraria per la visita" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Pane fx:id="primaFasciaOrari" layoutX="102.0" layoutY="598.0" prefHeight="40.0" prefWidth="144.0" style="-fx-background-color: white; -fx-background-radius: 30; -fx-cursor: hand;">
+         <children>
+            <Label fx:id="primaFasciaLabel" layoutX="48.0" layoutY="2.0" prefHeight="36.0" prefWidth="61.0" text="9-12" textFill="#011638">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="bottoneInvia" layoutX="903.0" layoutY="691.0" mnemonicParsing="false" onAction="#inviaRichiesta" prefHeight="47.0" prefWidth="144.0" styleClass="bottoniVerdi" text="Invia richiesta" textFill="WHITE" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Pane fx:id="secondaFasciaOrari" layoutX="266.0" layoutY="598.0" prefHeight="40.0" prefWidth="144.0" style="-fx-background-color: white; -fx-background-radius: 30; -fx-cursor: hand;">
+         <children>
+            <Label fx:id="secondaFasciaLabel" layoutX="42.0" layoutY="2.0" prefHeight="36.0" prefWidth="61.0" text="14-17" textFill="#011638">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="terzaFasciaOrari" layoutX="429.0" layoutY="598.0" prefHeight="40.0" prefWidth="144.0" style="-fx-background-color: white; -fx-background-radius: 30; -fx-cursor: hand;">
+         <children>
+            <Label fx:id="terzaFasciaLabel" layoutX="42.0" layoutY="2.0" prefHeight="36.0" prefWidth="61.0" text="17-20" textFill="#011638">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="paneMeteo" layoutX="86.0" layoutY="111.0" prefHeight="136.0" prefWidth="817.0" style="-fx-background-color: #98B9F2; -fx-background-radius: 30;" visible="false">
+         <children>
+            <Label fx:id="labelGradi" layoutX="62.0" layoutY="17.0" text="23°" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="72.0" />
+               </font>
+            </Label>
+            <Label fx:id="scrittaData" layoutX="288.0" layoutY="14.0" text="Sabato,2 Novembre 2024" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="tempestaImage" fitHeight="120.0" fitWidth="125.0" layoutX="716.0" layoutY="-12.0" visible="false">
+               <image>
+                  <Image url="@../../images/storm.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="288.0" layoutY="49.0">
+               <image>
+                  <Image url="@../../images/location.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="scrittaPosizione" layoutX="333.0" layoutY="59.0" text="Napoli,Campania-Italia" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="292.0" layoutY="95.0">
+               <image>
+                  <Image url="@../../images/drop.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="percentualePioggia" layoutX="333.0" layoutY="98.0" text="Probabilità di pioggia : 75%" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="sunImage" fitHeight="127.0" fitWidth="131.0" layoutX="726.0" layoutY="-34.0">
+               <image>
+                  <Image url="@../../images/sun.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="scrittaMeteo" layoutX="275.0" layoutY="152.0" text="Qui verranno visualizzate le previsioni meteo per il giorno selezionato!" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAvantiDate" layoutX="992.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#tornaAllaDash" prefHeight="55.0" prefWidth="85.0" rotate="180.0" style="-fx-background-color: transparent; -fx-cursor: hand;" textFill="#011638">
+         <graphic>
+            <ImageView fitHeight="69.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/Immagine132.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnIndietroDate" layoutX="4.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#tornaAllaDash" prefHeight="55.0" prefWidth="85.0" style="-fx-background-color: transparent; -fx-cursor: hand;" textFill="#011638" visible="false">
+         <graphic>
+            <ImageView fitHeight="69.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/Immagine132.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>
